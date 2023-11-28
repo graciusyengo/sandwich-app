@@ -1,0 +1,31 @@
+.container{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 80px;
+    margin-top: 80px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.container:hover{
+  border: 1px solid red;
+  transform: scale(1.05);
+  transition: all 1.5s ease-in-out;
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+    margin: 0;
+}
+.price{
+    font-size: 25px;
+    font-weight: bold;
+    color: #666;
+}
+.desc{
+    text-align: center;
+    color: #777;
+}

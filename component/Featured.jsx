@@ -17,13 +17,15 @@ export default function Featured() {
     },
     {
       title: "SANDWICH",
-      img: "/img/sandwich.jpg",
+      img: "/img/sandwich2.png",
       accessoir:"Pret à Porter et Délicieux",
-      reduct:"Livraison gratuit ",                           
+      reduct:"Livraison gratuit ", 
+      callToAction:"Commandez Maintenant"                          
     },
     {
       title: "Sandwich3",
-      img: "/img/sandwich1.png",
+      img: "/img/sandwich3.png",
+      callToAction:"Commandez Maintenant"
     },
   ];
 
@@ -41,7 +43,7 @@ export default function Featured() {
     <div className={styles.container}>
       <div
         className={styles.arrowContainer}
-        style={{ left: 0, zIndex: 3 }}
+        style={{ left: 0, zIndex: 2 }}
         onClick={() => handleArrow("l")}
       >
         <MdKeyboardArrowLeft size={166} color="white" />
@@ -58,11 +60,7 @@ export default function Featured() {
               <h3 className={styles.reduct}>{sandwichInfo.reduct}</h3>
               <button className={styles.callToAction}>{sandwichInfo.callToAction}</button>
             </div>
-
-           
             <Image src={sandwichInfo.img} alt="" layout="fill" objectFit="contain" style={{marginLeft:"200px"}} />
-         
-          
           </div>
         ))}
       </div>

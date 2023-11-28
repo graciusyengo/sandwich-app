@@ -63,15 +63,16 @@
 }
 .counter{
     position:absolute;
-    top:-4px;
-    left: 25px;
-    width: 20px;
-    height: 20px;
+    top:-6px;
+    left: 40px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    font-size: 20px;
     color:red;
 }

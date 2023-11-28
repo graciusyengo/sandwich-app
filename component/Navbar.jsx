@@ -1,10 +1,11 @@
 import styles from "../styles/Navbar.module.css";
 import Image from "next/image";
+import { TbShoppingCartFilled } from "react-icons/tb"
 import React from "react";
 
 export default function Navbar() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{zIndex:"33"}}>
       <div className={styles.item}>
         <div className={styles.callButton}>
           <Image src="/img/telephone.png" width="45" height="45" />
@@ -29,7 +30,7 @@ export default function Navbar() {
       </div>
       <div className={styles.item}>
         <div className={styles.cart}>
-          <Image src="/img/shopping-cart.png" width="34" height="44" />
+        <TbShoppingCartFilled size={60} style={{color:"white"}}/>
           <div className={styles.counter}>3</div>
         </div>
       </div>
