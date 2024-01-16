@@ -1,15 +1,18 @@
 import styles from "../styles/Navbar.module.css";
 import Image from "next/image";
-import { TbShoppingCartFilled } from "react-icons/tb"
+import { TbShoppingCartFilled } from "react-icons/tb";
 import React from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className={styles.container} style={{zIndex:"33"}}>
+    <div className={styles.container} style={{ zIndex: "33" }}>
       <div className={styles.item}>
-        <div className={styles.callButton}>
-          <Image src="/img/telephone.png" width="45" height="45" />
-        </div>
+        <Link href="/">
+          <div className={styles.callButton}>
+            <Image  className={styles.img}  src="/img/telephone.png" width="40" height="40" />
+          </div>
+        </Link>
         <div className={styles.texts}>
           <div className={styles.text}>Commander maintenant</div>
           <div className={styles.text}> 0982382176</div>
@@ -28,12 +31,16 @@ export default function Navbar() {
           <li className={styles.listItem}>Contact</li>
         </ul>
       </div>
-      <div className={styles.item}>
-        <div className={styles.cart}>
-        <TbShoppingCartFilled size={60} style={{color:"white"}}/>
-          <div className={styles.counter}>3</div>
+     
+        <div className={styles.item}>
+        <Link href="/cart">
+          <div className={styles.cart}>
+            <TbShoppingCartFilled  className={styles.shopping}size={50} style={{ color: "white" }} />
+            <div className={styles.counter}>3</div>
+          </div>
+          </Link>
         </div>
-      </div>
+    
     </div>
   );
 }

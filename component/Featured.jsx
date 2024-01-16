@@ -7,25 +7,27 @@ import { CallToAction, Translate } from "@material-ui/icons";
 import { isAbsolute } from "path";
 export default function Featured() {
   const [index, setIndex] = useState(0);
-  const sandwichInfos= [
+  const sandwichInfos = [
     {
       title: "SANDWICH",
       img: "/img/sandwich1.png",
-      accessoir:"Chaud et Épicé",
-      reduct:"20% de réduction ",
-      callToAction:"Commandez Maintenant"
+      accessoir: "Chaud et Épicé",
+      reduct: "20% de réduction ",
+      callToAction: "Commandez Maintenant",
     },
     {
       title: "SANDWICH",
       img: "/img/sandwich2.png",
-      accessoir:"Pret à Porter et Délicieux",
-      reduct:"Livraison gratuit ", 
-      callToAction:"Commandez Maintenant"                          
+      accessoir: "Pret à Porter et Délicieux",
+      reduct: "Livraison gratuit ",
+      callToAction: "Commandez Maintenant",
     },
     {
       title: "Sandwich3",
       img: "/img/sandwich3.png",
-      callToAction:"Commandez Maintenant"
+      accessoir: "Pret à Porter et Délicieux",
+      reduct: "A moindre cout  ",
+      callToAction: "Commandez Maintenant",
     },
   ];
 
@@ -46,7 +48,7 @@ export default function Featured() {
         style={{ left: 0, zIndex: 2 }}
         onClick={() => handleArrow("l")}
       >
-        <MdKeyboardArrowLeft size={166} color="white" />
+        <MdKeyboardArrowLeft className={styles.arrowLeft} size={135} color="white" />
       </div>
       <div
         className={styles.wrapper}
@@ -58,9 +60,18 @@ export default function Featured() {
               <h2 className={styles.accessoir}> {sandwichInfo.accessoir}</h2>
               <h1 className={styles.title}>{sandwichInfo.title}</h1>
               <h3 className={styles.reduct}>{sandwichInfo.reduct}</h3>
-              <button className={styles.callToAction}>{sandwichInfo.callToAction}</button>
+              <button className={styles.callToAction}>
+                {sandwichInfo.callToAction}
+              </button>
             </div>
-            <Image src={sandwichInfo.img} alt="" layout="fill" objectFit="contain" style={{marginLeft:"200px"}} />
+            <Image
+              className={styles.image}
+              src={sandwichInfo.img}
+              alt=""
+              layout="fill"
+              objectFit="contain"
+              style={{ marginLeft: "200px" }}
+            />
           </div>
         ))}
       </div>
@@ -69,7 +80,7 @@ export default function Featured() {
         style={{ right: 0 }}
         onClick={() => handleArrow("r")}
       >
-        <MdKeyboardArrowRight size={166} color="white" />
+        <MdKeyboardArrowRight className={styles.arrowRight} size={135} color="white" />
       </div>
     </div>
   );

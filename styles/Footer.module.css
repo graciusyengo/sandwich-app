@@ -2,6 +2,7 @@
     height: calc(100vh - 120px);
     background-color: #222;
     display: flex;
+    cursor: pointer;
 }
 .item{
     flex:1;

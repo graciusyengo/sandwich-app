@@ -2,9 +2,8 @@
     z-index: 223;
     height: calc(100vh - 120px);
     background-color: red;
- 
     overflow: hidden;
-    
+ 
 }
 .arrowContainer{
     position: absolute;
@@ -20,14 +19,12 @@
     height: 100%;
     display: flex;
     transition: all 1.5s ease-in-out;
- 
 }
 .mainContainer{
     width: 100vw;
     height: 100%;
     position: relative;
     z-index: 33;
-   
 }
 .imgContainer{
 position: absolute;
@@ -36,17 +33,14 @@ position: absolute;
 .titleContainer{
     position: absolute;
    left: 15%;
-    bottom:23%;
+    bottom:10%;
     color: white;
     font-weight: bold;
     z-index: 23;
-   
 }
 .accessoir{
     font-size: 40px;
     text-align: center;
-  
-  
 }
 .title{
     font-size: 70px;
@@ -72,13 +66,157 @@ position: absolute;
     border-radius: 15px;
     margin-bottom: 40px;
     margin-left: 10px;
-    
     z-index: 578;
     transition: all 0.3s ease;
-
-
 }
 .callToAction:hover{
-
   transform: scale(1.05);
+}
+
+@media screen and (max-width:393px){
+
+
+    .titleContainer{
+        position: absolute;
+        left: 15%;
+        bottom:25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .arrowContainer{
+        position: absolute;
+        top: 0;
+        bottom: 70px;
+        margin: auto;
+        cursor: pointer;
+    }
+    .arrowLeft{
+       width: 36px;
+    }
+    .arrowRight{
+        width: 36px;
+      
+    }
+    .reduct{
+        margin-left: 0;
+    }
+
+    .accessoir{
+        font-size: 20px;
+      
+    }
+    .title{
+        font-size: 40px;
+        
+    }
+    .callToAction{
+        width: 250px;
+    }
+  
+   .image{
+       display: none;
+   }  
+}
+
+@media (min-width:394px)and (max-width:412px){
+
+
+    .titleContainer{
+        position: absolute;
+        left: 15%;
+        bottom:25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .arrowContainer{
+        position: absolute;
+        top: 0;
+        bottom: 70px;
+        margin: auto;
+        cursor: pointer;
+    }
+    .arrowLeft{
+       width: 38px;
+    }
+    .arrowRight{
+        width: 38px;
+      
+    }
+    .reduct{
+        margin-left: 0;
+    }
+
+    .accessoir{
+        font-size: 20px;
+      
+    }
+    .title{
+        font-size: 40px;
+        
+    }
+    .callToAction{
+        width: 250px;
+    }
+  
+   .image{
+       display: none;
+   }  
+}
+
+
+@media (min-width:413px) and (max-width:480px){
+
+
+    .titleContainer{
+        position: absolute;
+        left: 15%;
+        bottom:25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .arrowContainer{
+        position: absolute;
+        top: 0;
+        bottom: 70px;
+        margin: auto;
+        cursor: pointer;
+    }
+    .arrowLeft{
+       width: 40px;
+    }
+    .arrowRight{
+        width: 40px;
+      
+    }
+    .reduct{
+        margin-left: 0;
+    }
+
+    .accessoir{
+        font-size: 20px;
+      
+    }
+    .title{
+        font-size: 40px;
+        
+    }
+    .callToAction{
+        width: 250px;
+    }
+  
+   .image{
+       display: none;
+   }  
 }
