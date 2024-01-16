@@ -33,7 +33,7 @@ position: absolute;
 .titleContainer{
     position: absolute;
    left: 15%;
-    bottom:10%;
+    bottom:20%;
     color: white;
     font-weight: bold;
     z-index: 23;

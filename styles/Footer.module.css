@@ -29,3 +29,17 @@
 .motto{
     color: #fff;
 }
+
+@media screen  and (max-width:480px){
+    .container{
+        text-align: center;
+    }
+    .item:first-child{
+        display: none;
+    }
+    .item:last-child{
+        flex-direction: column;
+    }
+   
+    
+}
