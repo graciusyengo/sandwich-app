@@ -3,6 +3,7 @@
     background-color: #222;
     display: flex;
     cursor: pointer;
+    margin-top: 44px;
 }
 .item{
     flex:1;
@@ -33,6 +34,8 @@
 @media screen  and (max-width:480px){
     .container{
         text-align: center;
+       height: auto;
+       flex-direction: column;
     }
     .item:first-child{
         display: none;
