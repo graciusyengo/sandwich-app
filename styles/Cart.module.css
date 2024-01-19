@@ -76,3 +76,52 @@ width: 100%;
     background-color: red;
     transform: scale(1.05);
   }
+  @media  screen and (max-width:480px) {
+
+    .container{
+        flex-direction: column;
+        padding: 20px;
+        
+    }
+    .imgContainer{
+        height: 30vw;
+        width: 30vw;
+    }
+    .table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .trTitle{
+        display: none;
+    }
+    .tr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .name{
+        margin-left: 22px;
+    }
+    .price::before{
+        content: "Prix :";
+        font-weight: bold;
+    }
+    .quantity::before{
+        content: "quantity :";
+        font-weight: bold;
+    }
+    .total::before{
+        content: "Total :";
+        font-weight: bold;
+    }
+
+    .wrapper{
+        width: 70%;
+       
+    }
+      
+  }

@@ -139,7 +139,14 @@ border-radius: 15px;
        padding-bottom: 30px;
         font-size: 15px;
         text-align: center;
+        transition: all 0.3s ease;
+        border-radius: 15px;
     }
+    .button:hover{
+        background-color: red;
+        transform: scale(1.05);
+    
+      }
 
     .sizes{
         width: 100%;

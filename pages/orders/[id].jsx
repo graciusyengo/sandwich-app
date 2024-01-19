@@ -23,7 +23,7 @@ export default function Order() {
         <div className={styles.row}>
           <table className={styles.table}>
             <thead>
-              <tr className={styles.tr}>
+              <tr className={styles.trTitle}>
                 <th className={styles.th}>Id Commande</th>
                 <th className={styles.th}>Client</th>
                 <th className={styles.th}>Adresse</th>
@@ -31,7 +31,7 @@ export default function Order() {
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr className={styles.tr}>
                 <td>
                   <span className={styles.id}>3444444Z4</span>
                 </td>
@@ -51,28 +51,28 @@ export default function Order() {
         </div>
         <div className={styles.row}>
           <div className={statusClass(0)}>
-            <LiaMoneyCheckAltSolid size={45} />
+            <LiaMoneyCheckAltSolid size={45} className={styles.icon} />
             <span className={styles.bake}>Payement</span>
             <div className={styles.checkedIcon}>
-              <FaRegCircleCheck  className={styles.checkedIcon}  style={{ color: 'green' }}  size={45} />
+              <FaRegCircleCheck  className={styles.checkedIcon}  style={{ color: 'green' }}  size={45}  />
             </div>
           </div>
           <div className={statusClass(1)}>
-            <IoSyncOutline size={45} />
+            <IoSyncOutline size={45} className={styles.icon}  />
             <span className="">En cours</span>
             <div className={styles.checkedIcon}>
               <FaRegCircleCheck className={styles.checkedIcon}style={{ color: 'green' }} size={45} />
             </div>
           </div>
           <div className={statusClass(2)}>
-            <FaMotorcycle size={45} />
+            <FaMotorcycle size={45} className={styles.icon}  />
             <span className="">En chemin</span>
             <div className={styles.checkIcon}>
               <FaRegCircleCheck className={styles.checkedIcon} style={{ color: 'green' }}   size={45} />
             </div>
           </div>
           <div className={statusClass(3)}>
-            <FaBuildingCircleCheck className={styles.delivered} size={45} />
+            <FaBuildingCircleCheck className={styles.delivered} size={45}   />
             <span className=""> Livraison</span>
             <div className={styles.checkIcon}>
               <FaRegCircleCheck className={styles.checkedIcon}style={{ color: 'green' }}   size={45} />

@@ -11,7 +11,7 @@ export default function Cart() {
       <div className={styles.left}>
         <table className={styles.table}>
           <thead>
-            <tr className={styles.tr}>
+            <tr className={styles.trTitle}>
               <th className={styles.th}> Produit</th>
               <th className={styles.th}>Nom</th>
               <th className={styles.th}>Extras</th>
@@ -21,7 +21,7 @@ export default function Cart() {
             </tr>
           </thead>
           <tbody>
-          <tr>
+          <tr className={styles.tr}>
             <td>
               <div className={styles.imgContainer}>
                 <Image
@@ -47,7 +47,7 @@ export default function Cart() {
               <span className={styles.total}>$19</span>
             </td>
           </tr>
-          <tr>
+          <tr className={styles.tr}>
             <td>
               <div className={styles.imgContainer}>
                 <Image
@@ -73,7 +73,7 @@ export default function Cart() {
               <span className={styles.total}>$19</span>
             </td>
           </tr>
-          <tr>
+          <tr className={styles.tr}>
             <td>
               <div className={styles.imgContainer}>
                 <Image
@@ -99,7 +99,7 @@ export default function Cart() {
               <span className={styles.total}>$19</span>
             </td>
           </tr>
-          <tr>
+          <tr className={styles.tr}>
             <td>
               <div className={styles.imgContainer}>
                 <Image
@@ -125,7 +125,7 @@ export default function Cart() {
               <span className={styles.total}>$19</span>
             </td>
           </tr>
-          <tr>
+          <tr className={styles.tr}>
             <td>
               <div className={styles.imgContainer}>
                 <Image

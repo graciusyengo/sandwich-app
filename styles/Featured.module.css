@@ -33,7 +33,7 @@ position: absolute;
 .titleContainer{
     position: absolute;
    left: 15%;
-    bottom:20%;
+    bottom:10%;
     color: white;
     font-weight: bold;
     z-index: 23;
@@ -79,13 +79,11 @@ position: absolute;
     .titleContainer{
         position: absolute;
         left: 15%;
-        bottom:25%;
+       
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-
     }
     .arrowContainer{
         position: absolute;
@@ -128,7 +126,7 @@ position: absolute;
     .titleContainer{
         position: absolute;
         left: 15%;
-        bottom:25%;
+     
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -173,23 +171,19 @@ position: absolute;
 
 
 @media (min-width:413px) and (max-width:480px){
-
-
     .titleContainer{
         position: absolute;
-        left: 15%;
-        bottom:25%;
+        left: 20%;
+        bottom: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-
     }
     .arrowContainer{
         position: absolute;
         top: 0;
-        bottom: 70px;
+        bottom: 80px;
         margin: auto;
         cursor: pointer;
     }
