@@ -168,8 +168,6 @@ position: absolute;
        display: none;
    }  
 }
-
-
 @media (min-width:413px) and (max-width:480px){
     .titleContainer{
         position: absolute;
