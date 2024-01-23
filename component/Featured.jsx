@@ -3,8 +3,7 @@ import styles from "../styles/Featured.module.css";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { useState } from "react";
 import Image from "next/image";
-import { CallToAction, Translate } from "@material-ui/icons";
-import { isAbsolute } from "path";
+
 export default function Featured() {
   const [index, setIndex] = useState(0);
   const sandwichInfos = [
